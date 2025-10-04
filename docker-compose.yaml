@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: .
+    container_name: youngrep-oge-site
+    develop:
+      watch:
+        - action: rebuild 
+          path: .
+          ignore:
+            - .venv
+            - .idea
+    ports:
+      - "5050:5050"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+

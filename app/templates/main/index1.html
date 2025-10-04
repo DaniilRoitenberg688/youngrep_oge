@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoungRep</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="logo">YoungRep</div>
+
+    <button id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="desktop-menu">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Mobile Menu -->
+<nav id="mobile-menu" class="mobile-menu">
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Готовься к ОГЭ<br>со сверстниками!</h1>
+    <p>Первая неделя — бесплатно!</p>
+    <button>Записаться на пробную неделю</button>
+
+    <!-- Swirl placeholders -->
+    <div id="swirl-top-left"><!-- SVG сюда --></div>
+    <div id="swirl-bottom-right"><!-- SVG сюда --></div>
+</section>
+
+<section class="subjects">
+    <div class="subjects-title">Выбери предметы ОГЭ</div>
+    <div class="subject-card" style="">
+        <div>
+            <div style="display: flex; ">
+                <div style="" class="subject-card-title">
+                    Русский язык
+                </div>
+                <div class="subject-arrow">
+                    <svg width="44" height="16" viewBox="0 0 44 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 8L1 7ZM43.7071 8.70711C44.0976 8.31659 44.0976 7.68342 43.7071 7.2929L37.3431 0.928935C36.9526 0.538411 36.3195 0.538411 35.9289 0.928935C35.5384 1.31946 35.5384 1.95262 35.9289 2.34315L41.5858 8L35.9289 13.6569C35.5384 14.0474 35.5384 14.6805 35.9289 15.0711C36.3195 15.4616 36.9526 15.4616 37.3431 15.0711L43.7071 8.70711ZM1 8L1 9L43 9L43 8L43 7L1 7L1 8Z"
+                              fill="white"/>
+                    </svg>
+
+                </div>
+            </div>
+            <div class="subject-card-text">
+                Грамматика, орфография, речь.
+                Подготовка к основному экзамену
+            </div>
+        </div>
+        <div style="margin-left: auto; transform: translateY(px); box-sizing: border-box; height: auto; object-fit: cover; object-position: center; clip-path: inset(5% 10%);">
+            <img src="images/russian.png" alt="russian" style=""/>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+</body>
+</html>

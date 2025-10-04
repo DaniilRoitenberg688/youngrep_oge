@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*background-color: #4f46e5;*/
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #4f46e5;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Desktop menu */
+nav.desktop-menu {
+    background-color: #4f46e5;
+    display: none;
+}
+
+nav.desktop-menu ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.desktop-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.desktop-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Burger */
+#menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-btn span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: white;
+}
+
+/* Mobile menu */
+nav.mobile-menu {
+    display: none;
+    background-color: #4f46e5;
+    padding: 16px;
+}
+
+nav.mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.mobile-menu li {
+    margin-bottom: 12px;
+}
+
+nav.mobile-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.mobile-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+section.hero {
+    position: relative;
+    padding: 24px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #4f46e5;
+}
+
+section.hero h1 {
+    color: white;
+    font-size: 36px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    line-height: 44px;
+    word-wrap: break-word
+}
+
+section.hero p {
+    color: white;
+    font-size: 24px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word
+}
+
+section.hero button {
+    margin-top: 32px;
+    background: #FF2300;
+    color: white;
+    font-size: 20px;
+    font-family: Ubuntu, Arial, sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+section.hero button:hover {
+    background: #e60000;
+}
+
+/* Swirl placeholders */
+#swirl-top-left, #swirl-bottom-right {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background: transparent;
+}
+
+#swirl-top-left {
+    top: 0;
+    left: 0;
+}
+
+#swirl-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    section.hero h1 {
+        font-size: 3rem;
+    }
+
+    section.hero p {
+        font-size: 1.5rem;
+    }
+
+    section.hero button {
+        font-size: 1.25rem;
+        padding: 20px 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #menu-btn {
+        display: none;
+    }
+
+    nav.desktop-menu {
+        display: block;
+    }
+
+    section.hero {
+        padding: 80px;
+    }
+
+    section.hero h1 {
+        font-size: 3.5rem;
+    }
+
+    section.hero p {
+        font-size: 2rem;
+    }
+
+    section.hero button {
+        font-size: 1.5rem;
+        padding: 24px 48px;
+    }
+
+    #swirl-top-left, #swirl-bottom-right {
+        width: 192px;
+        height: 192px;
+    }
+}
+
+.subjects {
+    padding-top: 70px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.subjects-title {
+    color: #111827;
+    font-size: 36px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    line-height: 44px;
+    word-wrap: break-word;
+    margin-bottom: 31px;
+
+}
+
+
+.subject-card {
+    width: 100%;
+    height: 100%;
+    background: #4F46E5;
+    border-radius: 8px;
+    padding: 10px 20px 19px 20px;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.subject-card-title {
+    color: white;
+    font-size: 24px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word;
+    /*margin-right: 10px;*/
+}
+
+
+.subject-arrow {
+    color: white;
+    font-size: 24px;
+    font-family: Ubuntu;
+    font-weight: 700;
+    line-height: 32px;
+    word-wrap: break-word;
+    margin-left: auto;
+
+}
+
+.subject-card-text {
+    color: white;
+    font-size: 12px;
+    font-family: Ubuntu;
+    font-weight: 400;
+    line-height: 16px;
+    word-wrap: break-word
+}
